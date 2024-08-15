@@ -1,0 +1,93 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+
+.main {
+  flex: 1;
+}
+
+img.logo{
+  width: 100px;
+}
+
+.main-color{
+  color: blueviolet;
+}
+
+img[class='tile-image']{
+  width: 220px;
+  height: 150px;
+  float: left;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+p[class="card-text"]{
+  font-size: small;
+  margin: 0px;
+  color: gray;
+}
+
+h2[class="card-title"]{
+  font-size: large;
+  color: rgb(83, 80, 80);
+  margin-top: 0px;
+}
+
+footer {
+  text-align: center;
+  color: midnightblue;
+}
+
+h1 {
+  font-size: 4rem;
+  color: rgb(83, 80, 80);
+}
+
+
+@media (min-width: 1000px){
+  .grid-container{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 150px;
+  }
+}
+
+@media (max-width: 1000px){
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+  }
+
+  img.logo{
+    width: 70px;
+  }
+
+  p[class="card-text"]{
+    font-size: small;
+    margin: 0px;
+    margin-bottom: 100px;
+  }
+
+  h2[class="card-title"]{
+    clear: both;
+    font-size: large;
+    padding-top: 30px;
+  }
+}
+
+
+@media (min-width: 1001px) and (max-width: 1200px){
+  h2[class="card-title"]{
+    clear: both;
+    font-size: large;
+    margin-top: 0px;
+  }
+}
